@@ -162,8 +162,27 @@ export default function PostsPage() {
                         {post.status}
                       </span>
                     </td>
+                    <td className="px-6 py-4">
+                      {post.categories.length > 0 && (
+                        <span className="text-sm text-gray-500">
+                          • {post.categories[0]}
+                        </span>
+                      )}
+                      </td>
+                    <td className="px-6 py-4">
+                      <span className="text-sm text-gray-500">
+                        {formatDate(post.createdAt)}
+                      </span>
+                      </td>
                     <td className="px-6 py-4 text-right">
                       <div className="flex items-center justify-end gap-2">
+                                        <Link
+                                          href={`${process.env.NEXT_PUBLIC_BASE_URL+'/'+post.slug}`}
+                                          className="p-2 text-gray-600 hover:bg-gray-100 rounded transition-colors"
+                                          title="Edit"
+                                        >
+                                          <Eye size={18} />
+                                        </Link>
                         <Link
                           href={`/dashboard/posts/edit/${post._id}`}
                           className="p-2 text-blue-600 hover:bg-blue-50 rounded transition-colors"

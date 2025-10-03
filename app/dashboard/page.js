@@ -238,12 +238,13 @@ export default function DashboardPage() {
                   >
                     <Edit size={18} />
                   </Link>
-                  <button
+                  <Link
+                    href={`${process.env.NEXT_PUBLIC_BASE_URL+'/'+post.slug}`}
                     className="p-2 text-gray-600 hover:bg-gray-100 rounded transition-colors"
                     title="View"
                   >
                     <Eye size={18} />
-                  </button>
+                  </Link>
                 </div>
               </div>
             ))}
