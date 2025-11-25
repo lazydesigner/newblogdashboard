@@ -342,8 +342,7 @@ export default function EditPostPage({ params }) {
                   type="text"
                   value={formData.metaTitle}
                   onChange={(e) => handleChange('metaTitle', e.target.value)}
-                  placeholder="SEO title for search engines"
-                  maxLength={60}
+                  placeholder="SEO title for search engines" 
                   className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                   required
                 />
@@ -360,8 +359,7 @@ export default function EditPostPage({ params }) {
                 <textarea
                   value={formData.metaDescription}
                   onChange={(e) => handleChange('metaDescription', e.target.value)}
-                  placeholder="Brief description for search engines"
-                  maxLength={160}
+                  placeholder="Brief description for search engines" 
                   rows={3}
                   className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                   required
