@@ -207,7 +207,7 @@ export default function EditPostPage({ params }) {
           <input
             type="text"
             // value={formData.authorId} 
-            value="Dr. R M Singh" 
+            value="Pravi Global IVF" 
             readOnly
             className="w-full px-4 py-3 border border-gray-300 rounded-lg bg-gray-50 text-gray-600"
           />
