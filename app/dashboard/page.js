@@ -218,10 +218,7 @@ export default function DashboardPage() {
                         }`}
                       >
                         {post.status}
-                      </span>
-                      <span className="text-sm text-gray-500">
-                        {formatDate(post.createdAt)}
-                      </span>
+                      </span> 
                       {post.categories.length > 0 && (
                         <span className="text-sm text-gray-500">
                           • {post.categories[0]}

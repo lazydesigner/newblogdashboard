@@ -124,10 +124,7 @@ export default function PostsPage() {
                   </th>
                   <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                     Categories
-                  </th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                    Created
-                  </th>
+                  </th> 
                   <th className="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">
                     Actions
                   </th>
@@ -169,11 +166,7 @@ export default function PostsPage() {
                         </span>
                       )}
                       </td>
-                    <td className="px-6 py-4">
-                      <span className="text-sm text-gray-500">
-                        {formatDate(post.createdAt)}
-                      </span>
-                      </td>
+                     
                     <td className="px-6 py-4 text-right">
                       <div className="flex items-center justify-end gap-2">
                                         <Link
